@@ -51,9 +51,9 @@ def main():
 
     model,scaler = create_model(data)
 
-    with open('model.pkl', 'wb') as f:
+    with open('model/model.pkl', 'wb') as f:
         pickle.dump(model, f)
-    with open('scaler.pkl', 'wb') as f:
+    with open('model/scaler.pkl', 'wb') as f:
         pickle.dump(scaler, f)
 
     
